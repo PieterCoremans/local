@@ -1,0 +1,8 @@
+#!/bin/bash
+
+chosen=$(echo -e "be\nfr(mac)" | dmenu -i -p "Which keyboard layout do you want?")
+
+case "$chosen" in 
+    "be") setxkbmap be;;
+    "fr(mac)") setxkbmap -layout fr -variant mac;;
+esac
