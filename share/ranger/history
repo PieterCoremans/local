@@ -1,0 +1,13 @@
+search u
+search X11
+open_with 
+rename tim-swaan-bridge.jpg
+rename Downloads
+trash
+delete
+mkdir nemo
+mkdir light
+filter 
+sxiv
+shell sxiv tim-swaan-bridge.jpg
+shell sxiv blue.png
