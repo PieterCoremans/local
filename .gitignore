@@ -1,4 +1,10 @@
-/home/pieter/.local/share/Trash/
-/home/pieter/.local/share/ranger/
-/home/pieter/.local/share/xorg/
-/home/pieter/.local/share/recently-used.xbel
+$HOME/.local/share/Trash/
+$HOME/.local/share/ranger/
+$HOME/.local/share/xorg/
+$HOME/.local/share/recently-used.xbel
+
+#exclude everything from share
+$HOME/.local/share/*
+
+#exception to the rule
+!$HOME/.local/share/fonts
