@@ -1,10 +1,5 @@
-$HOME/.local/share/Trash/
-$HOME/.local/share/ranger/
-$HOME/.local/share/xorg/
-$HOME/.local/share/recently-used.xbel
-
 #exclude everything from share
-$HOME/.local/share/*
+share/*
 
 #exception to the rule
-!$HOME/.local/share/fonts
+!share/fonts
