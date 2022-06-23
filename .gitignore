@@ -3,3 +3,4 @@ share/*
 
 #exception to the rule
 !share/fonts
+!share/backgrounds
