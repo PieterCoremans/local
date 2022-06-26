@@ -3,5 +3,5 @@
 chosen=$(echo -e "Yes\nNo" | dmenu -i -p "Do you want to shutdown now?")
 
 if [ "$chosen" == "Yes" ]; then
-  shutdown now
+  sudo shutdown now
 fi
