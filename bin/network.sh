@@ -1,15 +1,15 @@
 #!/bin/bash
 
 network() {
-        wire="$(ip a | grep 'eth0\|enp' | grep inet | wc -l)"
-        wifi="$(ip a | grep wlan  | grep inet | wc -l)"
+        wire="$(nmcli device status | grep ethernet | grep connected | wc -l)"
+        wifi="$(nmcli device status | grep wifi  | grep conected | wc -l)"
 
 if [ $wire = 1 ]; then 
-        echo "Ether"
+        echo "Ethernet"
 elif [ $wifi = 1 ]; then 
         echo "Wifi"
 else
-        echo "No int"
+        echo "No internet"
 fi
 }
 

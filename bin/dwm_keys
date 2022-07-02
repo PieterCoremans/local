@@ -1,0 +1,14 @@
+#!/bin/bash
+
+sed -n '/START_KEYS/,/END_KEYS/p' ~/.config/suckless/dwm/config.h | \
+        grep -e '{ MODKEY' \
+        -e 'TAGKEYS' | \
+        #sed -e 's/^[ \t]\/\*.*//' | \
+        sed -e 's/^[ \t]*//' \
+        -e 's/^{ *//' \
+        -e 's/},//' \
+        -e 's/{.*.}//' \
+        -e 's/SHCMD(.*)//' \
+        | \
+        grep -v '^\/\*' |\
+        yad --text-info  --back=#282c34 --fore=#46d9ff --geometry=1200x720 --no-buttons --borders=0 --center --close-on-unfocus
