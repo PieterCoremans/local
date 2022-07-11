@@ -1,7 +1,7 @@
 #!/bin/bash
 
-vol_up() { sudo brillo -q -A 5 ; }
-vol_down() { sudo brillo -q -U 5 ; }
+vol_up() { brillo -q -A 5 ; }
+vol_down() { brillo -q -U 5 ; }
 
 case "$1" in
         up) vol_up ;;
